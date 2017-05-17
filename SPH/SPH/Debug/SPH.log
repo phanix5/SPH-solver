@@ -1,0 +1,53 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  c:\Users\Phanindra Moganti\Documents\Visual Studio 2015\Projects\SPH\SPH>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin"  -Ilib\glew -Ilib\freeglut -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\Phanindra Moganti\Documents\Visual Studio 2015\Projects\SPH\SPH\kernel.cu" 
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(178): warning : variable "w_norm" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(303): warning : variable "dvx" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(303): warning : variable "dvy" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(851): warning : variable "alpha" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(854): warning : variable "density_norm" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(856): warning : variable "flag" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(857): warning : variable "redis_flag_h" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(860): warning : variable "count_timestep" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(861): warning : variable "new_ntotal_h" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(862): warning : variable "old_ntotal" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(863): warning : variable "latent_heat" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(864): warning : variable "total_mass" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(865): warning : variable "liquid_mass_old" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(883): warning : variable "totTime" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(178): warning : variable "w_norm" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(303): warning : variable "dvx" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(303): warning : variable "dvy" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(851): warning : variable "alpha" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(854): warning : variable "density_norm" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(856): warning : variable "flag" was set but never used
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(857): warning : variable "redis_flag_h" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(860): warning : variable "count_timestep" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(861): warning : variable "new_ntotal_h" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(862): warning : variable "old_ntotal" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(863): warning : variable "latent_heat" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(864): warning : variable "total_mass" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(865): warning : variable "liquid_mass_old" was declared but never referenced
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(883): warning : variable "totTime" was declared but never referenced
+CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+  kernel.cu
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(836): warning C4244: '=': conversion from 'double' to 'std::size_t', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(839): warning C4244: '=': conversion from 'double' to 'std::size_t', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(921): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(861): warning C4101: 'new_ntotal_h': unreferenced local variable
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(857): warning C4101: 'redis_flag_h': unreferenced local variable
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1037): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1038): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1039): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1045): warning C4018: '<': signed/unsigned mismatch
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1049): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1050): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1051): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1079): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:/Users/Phanindra Moganti/Documents/Visual Studio 2015/Projects/SPH/SPH/kernel.cu(1080): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  SPH.vcxproj -> c:\Users\Phanindra Moganti\Documents\Visual Studio 2015\Projects\SPH\Debug\SPH.exe
+  SPH.vcxproj -> c:\Users\Phanindra Moganti\Documents\Visual Studio 2015\Projects\SPH\Debug\SPH.pdb (Full PDB)
+  copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "c:\Users\Phanindra Moganti\Documents\Visual Studio 2015\Projects\SPH\Debug\"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart32_80.dll
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart64_80.dll
+          2 file(s) copied.
