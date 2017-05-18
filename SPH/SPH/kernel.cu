@@ -46,13 +46,14 @@ void write_array(int *arr, int len, string name);
 void write_array(double *arr, int len, string name);
 void force_comparison_util(double *dv1dt, double *dv2dt, double *dS1dt, double *dS2dt, double *exdv1dt, double *exdv2dt, int len);
 
-
+// Function to find the maximum smoothing length required in the calculation of timestep.
 __global__ void max_hsml(int ntotal, double *hsml, double *hsml_max, int *fluidcode)
 {
 	hsml_max[0] = hsml[1];
 	for (int i = 1; i <= ntotal; i++) if (hsml[i] > *hsml_max && fluidcode[i] != -1)hsml_max[0] = hsml[i];
 }
 
+// A voxel search is implemented to find the neighbors of particles. Each particle is assigned to a square of side = smoothing length based on its position
 __global__ void index_particles(int ntotal, int *bucket_index, double *x1, double *x2, double length, double kern_constant, double *hsml_max, int *nvoxel_length)
 {
 	int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -132,7 +133,7 @@ __global__ void compute_kernel(int ntotal, int *bucket_index, int *nvoxel_length
 					dwdx[index] = 0;
 					dwdy[index] = 0;
 				}
-				/*double factor = 7 / (478 * hsml_avg*hsml_avg*3.14159265358979323846);       //MOrris JOURNAL OF COMPUTATIONAL PHYSICS 136,214–226(1997) Reason for using quintic spline given
+				/*double factor = 7 / (478 * hsml_avg*hsml_avg*3.14159265358979323846);       //MOrris JOURNAL OF COMPUTATIONAL PHYSICS 136,214â€“226(1997) Reason for using quintic spline given
 				if (r >= 0 && r < 1)
 				{
 					w[index] = factor*(pow(3 - r, 5) - 6 * pow(2 - r, 5) + 15 * pow(1 - r, 5));
