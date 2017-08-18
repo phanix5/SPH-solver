@@ -11,5 +11,4 @@ For any particluar problem, you will have to input these three files: parameters
 
 For starters you can load the root folder into visual studio and run the program. A simple dam break scenario is already set up.
 
-## The solver currently has few features built in and I aim to develop a complete SPH simulation package. I am a newbie in programming and would gladly accept help/suggestions in improving this code. 
 ## For any queries drop a mail at: phanindramoganti@gmail.com
